@@ -1,7 +1,7 @@
 project "implot"
     kind "StaticLib"
     language "C++"
-    staticruntime "on"
+    staticruntime "off"
 
     targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
@@ -9,9 +9,9 @@ project "implot"
     files 
     {
         "implot.h",
-        "implot_internal.h"
-        "implot.cpp"
-        "implot_demo.cpp"
+        "implot_internal.h",
+        "implot.cpp",
+        "implot_demo.cpp",
         "implot_items.cpp"
     }
 
