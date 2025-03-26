@@ -24,9 +24,11 @@ project "implot"
         systemversion "latest"
 
     filter "configurations:Debug"
+        defines "_DEBUG"
         runtime "Debug"
         symbols "on"
 
     filter "configurations:Release"
+        defines "NDEBUG"
         runtime "Release"
         optimize "on"
